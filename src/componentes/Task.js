@@ -37,8 +37,8 @@ function Task({ id, text, complete, completeTask, deleteTask, editTask }) {
                         </section></>
             :
             <form className= "formEdit" onSubmit={submitEdit}>  
-            <input value={editText} onChange={createEdit} />
-                <button>Guardar</button>
+            <input className="inputEdit"value={editText} onChange={createEdit} />
+                <button className= "editButton">Guardar</button>
                 </form>
 }
         </div>

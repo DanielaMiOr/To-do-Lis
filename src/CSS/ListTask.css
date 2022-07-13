@@ -26,3 +26,24 @@ border-radius: 4px 0 0 4px;
     text-transform: capitalize;
 
 }
+.inputEdit{
+    width: 350px;
+    font-size: 20px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    outline: none;
+    border:none;
+    
+    }
+.editButton{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 0 4px 0 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #9BA3EB;
+    color: white;
+    text-transform: capitalize;
+}
