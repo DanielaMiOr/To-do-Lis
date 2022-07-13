@@ -9,10 +9,12 @@ function ListTask(props){
     const sendChange =e =>{
     setInput(e.target.value);
   
+  
 }
 
     const sendForm= e=>{
         e.preventDefault();
+        
     
         const newTask={
             id:uuidv4(),
@@ -23,6 +25,7 @@ function ListTask(props){
        
     
     props.onSubmit(newTask);
+    setInput("");
     }
     return(
         <form className="form"
@@ -34,6 +37,7 @@ function ListTask(props){
            placeholder="Escribe una tarea"
            name="texto"
            onChange= {sendChange}
+           value={input}
            /> 
            <button className="buttonTask">
                Agregar tarea

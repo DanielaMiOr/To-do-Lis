@@ -1,27 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import '../CSS/Task.css';
-import { AiOutlineCloseCircle,AiFillEdit } from "react-icons/ai";
+import { AiOutlineCloseCircle, AiFillEdit } from "react-icons/ai";
 
-function Task({ id,text, complete,completeTask, deleteTask,editTask }) {
-    
+function Task({ id, text, complete, completeTask, deleteTask, editTask }) {
+    const [edit, setEdit] = useState(false);
+    const [editText, setEditText] = useState(text);
+    const editTaskForm = () => {
+        setEdit(true)
+    }
+    const createEdit = (e) => {
+        setEditText(e.target.value);
+    }
+    const submitEdit = (e) => {
+        e.preventDefault();
+        editTask(id, editText)
+        setEdit(false);
+    }
+
     return (
-        <div className={complete ? 'containerWork complete': 'containerWork'}>
-            <section className="textContainer"
-            onClick={()=>completeTask(id)}>
-                {text}
-            </section>
-            <section className="iconosBox"
-            onClick={()=> editTask(id)}>
-                <AiFillEdit className="editIcon"/>
+        <div className={complete ? 'containerWork complete' : 'containerWork'}>
+            {
+                !edit ?
+            <><section className="textContainer"
+                        onClick={() => completeTask(id)}>
+                        {text}
+                    </section><section className="iconosBox"
+                        onClick={() => setEdit(true)}>
+                            <AiFillEdit className="icons" />
 
 
-            </section>
-            <section className="iconosBox"
-            onClick={()=> deleteTask(id)}>
-                <AiOutlineCloseCircle  className="deleteIcon"/>
+                        </section><section className="iconosBox"
+                            onClick={() => deleteTask(id)}>
+                            <AiOutlineCloseCircle className="icons" />
 
 
-            </section>
+                        </section></>
+            :
+            <form className= "formEdit" onSubmit={submitEdit}>  
+            <input value={editText} onChange={createEdit} />
+                <button>Guardar</button>
+                </form>
+}
         </div>
     )
 }

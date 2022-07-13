@@ -16,8 +16,6 @@ function App() {
 
       <section className= "listBox">
       <h1>To do list </h1>
-     {/* <Tarea text = "prueba del texto"/> */}
-{/* <ListTask/> */}
      <ContainerTask/>
    </section>
     </div>
