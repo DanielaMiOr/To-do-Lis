@@ -13,7 +13,7 @@ body{
   background-size:cover;
   width: 100vw;
   height: 100vw;
-  overflow-y: hidden;
+  overflow-x: hidden;
  }
 .logo{
   width:auto;

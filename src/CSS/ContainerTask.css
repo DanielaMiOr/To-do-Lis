@@ -5,7 +5,7 @@
     justify-content: center;
     overflow-y: scroll;
     width: inherit;
-    height: 400px;
+   
 }
 ::-webkit-scrollbar { 
     width: 1em; 
