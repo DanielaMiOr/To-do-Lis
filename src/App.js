@@ -1,6 +1,6 @@
 
 import './CSS/App.css'
-import Logo from'./img/logoNotas.png';
+import Logo from'./img/logoNotitas.png';
 // import Tarea from './componentes/Tarea';
 import ListTask from './componentes/ListTask';
 import ContainerTask from './componentes/ContainerTask';
