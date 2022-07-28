@@ -36,5 +36,4 @@ Fue una gran experiencia, disfruté mucho este proceso, ya que pude jugar con mi
 Pude poner en práctica mis conocmientos de React y sus componentes.
 
 
-
 I
