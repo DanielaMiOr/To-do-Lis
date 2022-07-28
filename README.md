@@ -34,6 +34,3 @@ Para poder ver el proyecto dar [click aqui ](https://to-do-list-dany.netlify.app
 ## 3. ¿Qué es lo que más me gusto de mi desarrollo?.
 Fue una gran experiencia, disfruté mucho este proceso, ya que pude jugar con mi creatividad para plasmar colores y elementos. Aprendí a utulizar el local storage para guardar información.
 Pude poner en práctica mis conocmientos de React y sus componentes.
-
-
-I
